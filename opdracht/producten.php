@@ -4,8 +4,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <?php include 'includes/functions.php';?>
+    <title>Producten</title>
   </head>
+    <?php include "menu.php"  ?>
     <form action="producten.php" method="get"><!-- dit laten staan! -->
 
     <p>Hieronder een lijst met producten die je bij ons kunt bestellen en de prijs per stuk:</p>
@@ -24,6 +27,46 @@
                 <td>1</td>
                 <td>peren</td>
                 <td>0,30</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>bananen</td>
+                <td>0,30</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>kersen</td>
+                <td>0,40</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>mango's</td>
+                <td>0,40</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>kiwi</td>
+                <td>0,35</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>watermeloenen</td>
+                <td>1,70</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>mandarijnen</td>
+                <td>0,30</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>aardbijen</td>
+                <td>0,25</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>ananas</td>
+                <td>0,40</td>
             </tr>
         </table>
 

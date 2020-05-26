@@ -4,8 +4,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <?php include 'includes/functions.php';?>
+    <title>Home</title>
   </head>
+  <body>
+    <?php include "menu.php"  ?>
     <form action="index.php" method="get"><!-- dit laten staan! -->
 
     <p>Op deze website kun je checken welk datatype je hebt ingevoerd.</p>
@@ -15,5 +19,6 @@
     <p>Het datatype van de waarde: <?php getInput(); ?> is </p>
 
     </form><!-- dit laten staan! -->
+    <?php include "footer.php" ?>
   </body>
 </html>
