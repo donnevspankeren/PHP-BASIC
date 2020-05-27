@@ -8,7 +8,7 @@
     <?php include 'includes/functions.php';?>
     <title>Producten</title>
   </head>
-    <?php include "menu.php"  ?>
+    <?php include "includes/menu.php"  ?>
     <form action="producten.php" method="get"><!-- dit laten staan! -->
 
     <p>Hieronder een lijst met producten die je bij ons kunt bestellen en de prijs per stuk:</p>
@@ -76,9 +76,10 @@
     <p>Vul je leeftijd in voor korting</p>
     <p><label>leeftijd: </label><input type="text" name="leeftijd"></p><!-- dit laten staan! -->
     <p><button type="submit" name="submit">Bereken totaal</button></p><!-- dit laten staan! -->
-    <p>voor <?php getAmount(); ?> x het product: <?php getProductNr(); ?> betaal je:</p>
-    <p>je bent <?php getAge(); ?> je korting is: </p>
+    <p>voor <?php getAmount(); ?> x het product: <?php getProductNr(); ?> betaal je: <?php totaalBedrag()?></p>
+    <p>je bent <?php getAge(); ?> je korting is: <?php korting() ?></p>
 
     </form><!-- dit laten staan! -->
+    <?php include "includes/footer.php" ?>
   </body>
 </html>
