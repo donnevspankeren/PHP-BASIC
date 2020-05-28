@@ -12,24 +12,17 @@
     <form action="producten.php" method="get"><!-- dit laten staan! -->
 
     <p>Hieronder een lijst met producten die je bij ons kunt bestellen en de prijs per stuk:</p>
-    <?php if (count($product) > 0): ?>
-    <table>
-        <thead>
-            <tr>
-                <th>Product</th>
-                <th>Prijzen</th>
-            </tr>
-        </thead>
-        <tbody>
-        <?php foreach ($product as $row): ?>
-        <tr>
-            <td><?php echo implode('</td><td>', $row); ?></td>
-        </tr>
-        <?php endforeach; ?>
-        </tbody>
+    <table> 
+      <tr>
+          <th>Product</th>
+          <th>Prijzen</th>
+      </tr>
+      <?php foreach ($product as $row): ?>
+      <tr>
+        <td><?php echo implode('</td><td>', $row); ?></td>
+      </tr>
+      <?php endforeach; ?>  
     </table>
-    <?php endif; ?>
-
     <p>Vul hieronder het productnummer in van het product wat je wilt bestellen en de hoeveelheid.</p> 
     <p><label>productnummer: </label><input type="text" name="productnummer"> &nbsp;&nbsp;<label>aantal: </label><input type="text" name="aantal"></p><!-- dit laten staan! -->
     
