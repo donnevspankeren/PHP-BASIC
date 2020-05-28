@@ -1,4 +1,9 @@
 <?php
+$product = array("1"=>['1: appels', 'prijs'=> 0.25], "2"=>['2: peren', 'prijs'=> 0.30],
+"3"=>['3: bananen', 'prijs'=> 0.30], "4"=>[ '4: kersen', 'prijs'=> 0.40],
+"5"=>['5: mango', 'prijs'=> 0.40], "6" => ['6: kiwis', 'prijs'=> 0.35],
+"7"=>['7: watermeloen', 'prijs'=> 1.7], "8" =>['8: mandarijnen', 'prijs'=> 0.30],
+"9"=>['9: aardbijen', 'prijs'=> 0.25], "10"=>['10: ananas', 'prijs'=> 0.40]);
 
 function getInput()
 {
@@ -32,12 +37,7 @@ function getvalue(){
 }
 
 function totaalBedrag(){
-    $product = array(
-        "0"=>['appels', 'prijs'=> 0.25], "1"=>['peren', 'prijs'=> 0.30],
-        "2"=>['bananen', 'prijs'=> 0.30], "3"=>[ 'kersen', 'prijs'=> 0.40],
-        "4"=>['mango', 'prijs'=> 0.40], "5" => ['kiwis', 'prijs'=> 0.35],
-        "6"=>['watermeloen', 'prijs'=> 1.7], "7" =>['mandarijnen', 'prijs'=> 0.30],
-        "8"=>['aardbijen', 'prijs'=> 0.25], "9"=>['ananas', 'prijs'=> 0.4]);
+   global $product;
      
     if (isset($_GET['productnummer']) && isset ($_GET['aantal'])){
         if(isset($product[$_GET['productnummer']])){
