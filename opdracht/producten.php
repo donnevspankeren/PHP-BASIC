@@ -21,7 +21,7 @@
             </tr>
         </thead>
         <tbody>
-        <?php foreach ($product as $row): array_map('htmlentities', $row); ?>
+        <?php foreach ($product as $row): ?>
         <tr>
             <td><?php echo implode('</td><td>', $row); ?></td>
         </tr>
